@@ -20,5 +20,9 @@ public class TwoDimensionalArraysBasics {
         for (int[] mark : marks) {
             System.out.println(mark[2]);
         }
+
+        for (int[] mark : markss) {
+            System.out.println(mark[1]);
+        }
     }
 }
