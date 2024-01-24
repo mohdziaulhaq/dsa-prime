@@ -1,4 +1,4 @@
-package week1;
+package javabasics;
 
 public class Patterns {
     public static void main(String[] args) {

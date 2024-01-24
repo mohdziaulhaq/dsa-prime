@@ -1,4 +1,4 @@
-package week1;
+package javabasics;
 import java.util.Scanner;
 public class UserInput {
     public static void main(String[] args) throws Exception {

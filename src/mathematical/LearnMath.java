@@ -1,4 +1,4 @@
-package methods;
+package mathematical;
 
 public class LearnMath {
     public static void main(String[] args) {
