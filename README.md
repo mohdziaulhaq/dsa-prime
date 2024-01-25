@@ -1,6 +1,24 @@
 This repository is created to build a code vault for DSA questions in Java.
 
 # Java notes
+Data types are divided into two groups:
+
+Primitive data types - includes **byte, short, int, long, float, double, boolean and char**
+
+Non-primitive data types - such as **String, Arrays and Classes**
+
+```
+Data Type	Size	    Description
+byte	    1 byte	    Stores whole numbers from -128 to 127
+short	    2 bytes	    Stores whole numbers from -32,768 to 32,767
+int	        4 bytes	    Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long	    8 bytes	    Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float	    4 bytes	    Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double	    8 bytes	    Stores fractional numbers. Sufficient for storing 15 decimal digits
+boolean	    1 bit	    Stores true or false values
+char	    2 bytes	    Stores a single character/letter or ASCII values
+```
+
 ## Arrays
 
 ### 1D Array         
@@ -79,9 +97,10 @@ int marks[][] = new int[2][3];
 
 ## String
 
+![String methofs](./src/assets/java-string-methods.png)
 In java, String is basically an object that represents a sequence of char values. An array of character works same as Java string.
 
-# How to create Java string
+### How to create Java string
 
 - By string literal
 
@@ -92,9 +111,42 @@ We use string a lot, so String literals are created in special area called **Str
 
  - By new keyword
 
- `    String name = new String("Zia");`
+ `    String newName = new String("Zia");`
 
 When a string is created using new keyword, the object is stored in the Heap menory(and not the string pool area)
 
+### == operator
 
+        String name = "Zia";
+        String sameName = "Zia";
+        String newName = new String("Zia");
+
+        if(name == sameName){
+            System.out.println("Both are same"); // OP:- Both are same
+        }
+
+        if(name == newName){
+            System.out.println("Both are same");
+        }else{
+            System.out.println("Both are not same");// OP:- Both are not same
+        }
+
+
+**== operator** in case of objects, checks for references. As name and sameName points to the same string literal we get output as same.Whereas when we check name and newName, they point to different memomry location hence we get, not same.
+
+In case of primitive types, it checks for values
+```
+    int age = 14;
+    int marks = 14;
+
+    if(age==marks) 
+    System.out.println("true");//true
+```
+
+### Comparing two strings in java
+
+String class provides the following two methods for equality check.
+ - public boolean equals(Object another) compares this string to the specified object
+
+  - public boolean equalsIgnoreCase(Object another) compares this string to the specified object, ignoring case.
 
