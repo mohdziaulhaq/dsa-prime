@@ -1,4 +1,6 @@
 This repository is created to build a code vault for DSA questions in Java.
+
+# Java notes
 ## Arrays
 
 ### 1D Array         
