@@ -4,7 +4,7 @@ public class LearnRecursionBasics {
     public static void main(String[] args) {
         // fun(4);
         // System.out.println(sumOfN(5));
-        System.out.println(fibonacci(7));
+        System.out.println(fibOfN(7));
     }
 
     static void fun(int n) {
