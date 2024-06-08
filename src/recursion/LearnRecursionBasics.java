@@ -22,11 +22,11 @@ public class LearnRecursionBasics {
         return sumOfN(n - 1) + n;
     }
 
-    static int fibonacci(int n) {
-        if (n == 0 || n == 1)
+    static int fibOfN(int n) {
+        if (n <= 1)
             return n;
 
-        int result = fibonacci(n - 2) + fibonacci(n - 1);
+        int result = fibOfN(n - 2) + fibOfN(n - 1);
         return result;
     }
 }
